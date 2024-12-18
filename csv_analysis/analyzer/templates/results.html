@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Analysis Results</h1>
+
+        <h2>First Rows of Data</h2>
+        <div class="table-container">
+            {{ first_rows|safe }}
+        </div>
+
+        <h2>Summary Statistics</h2>
+        <div class="table-container">
+            {{ stats|safe }}
+        </div>
+
+        <h2>Missing Values</h2>
+        <div class="table-container">
+            {{ missing_values|safe }}
+        </div>
+
+        <h2>Histograms</h2>
+        {% if histograms %}
+            <img src="data:image/png;base64,{{ histograms }}" alt="Histograms">
+        {% else %}
+            <p>No histograms available.</p>
+        {% endif %}
+
+        <a href="{% url 'upload_file' %}">Upload Another File</a>
+    </div>
+</body>
+</html>
