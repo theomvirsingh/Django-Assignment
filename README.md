@@ -24,57 +24,52 @@ This project is a Django web application that allows users to upload CSV files a
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/theomvirsingh/Django-Assignment/.git
-   cd csv-analysis
-   ```
+      ```bash
+      git clone https://github.com/theomvirsingh/Django-Assignment/.git
+      cd csv-analysis
+      ```
 2. **Create a Virtual Environment
 
-```python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
+   ```python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
 3. **Install Dependencies
 
-```pip install -r requirements.txt```
+   ```pip install -r requirements.txt```
 
 4. **Run Migrations
 
-```python manage.py migrate```
+   ```python manage.py migrate```
 
 5. **Start the Development Server
 
-```python manage.py runserver```
+   ```python manage.py runserver```
 
 6. **Access the Application
 
-Open your web browser and go to `http://127.0.0.1:8000/` to access the application.
+   Open your web browser and go to `http://127.0.0.1:8000/` to access the application.
 
-***Project Structure
+### Project Structure
 
-`csv_analysis/`: Main project directory containing settings and configurations.
-`analyzer/`: Django app responsible for handling file uploads and data analysis.
-`templates/`: Directory containing HTML templates for the application.
-`static/`: Directory for static files (CSS, JavaScript, images).
+   `csv_analysis/`: Main project directory containing settings and configurations.
+   `analyzer/`: Django app responsible for handling file uploads and data analysis.
+   `templates/`: Directory containing HTML templates for the application.
+   `static/`: Directory for static files (CSS, JavaScript, images).
 
-***Usage
+### Usage
 
-1. Navigate to the upload page.
-2. Select a CSV file from your local machine.
-3. Click the "Upload" button to analyze the file.
-4. View the analysis results, including data preview, statistics, missing values, and histograms.
+   1. Navigate to the upload page.
+   2. Select a CSV file from your local machine.
+   3. Click the "Upload" button to analyze the file.
+   4. View the analysis results, including data preview, statistics, missing values, and histograms.
 
-***Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
-
-***License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-***Acknowledgments
+### Acknowledgments
 
 Django: https://www.djangoproject.com/
+
 Pandas: https://pandas.pydata.org/
+
 NumPy: https://numpy.org/
+
 Matplotlib: https://matplotlib.org/
