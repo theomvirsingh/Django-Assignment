@@ -25,7 +25,7 @@ This project is a Django web application that allows users to upload CSV files a
 1. **Clone the Repository**
 
       ```bash
-      git clone https://github.com/theomvirsingh/Django-Assignment/.git
+      git clone https://github.com/theomvirsingh/Django-Assignment.git
       cd csv-analysis
       ```
 2. **Create a Virtual Environment**
