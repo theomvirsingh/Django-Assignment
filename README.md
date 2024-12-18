@@ -66,7 +66,7 @@ This project is a Django web application that allows users to upload CSV files a
       
    2. Select a CSV file from your local machine.
       
-   3. Click the "Upload" button to analyze the file.
+   3. Click the "Upload" button to analyze the file. (Sample organizations-100.csv is provided)
       
    4. View the analysis results, including data preview, statistics, missing values, and histograms.
 
