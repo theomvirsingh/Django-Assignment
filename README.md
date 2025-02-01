@@ -72,7 +72,7 @@ This project is a Django web application that allows users to upload CSV files a
 
 ### Acknowledgments
 
-Django: https://www.djangoproject.com/
+Django: https://www.djangoproject.com/ 
 
 Pandas: https://pandas.pydata.org/
 
